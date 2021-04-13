@@ -64,7 +64,7 @@ namespace MyTasks
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Task}/{action=Tasks}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

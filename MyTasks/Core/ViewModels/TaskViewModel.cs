@@ -1,5 +1,4 @@
-﻿using MyTasks.Core.Models;
-using MyTasks.Core.Models.Domains;
+﻿using MyTasks.Core.Models.Domains;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +8,11 @@ namespace MyTasks.Core.ViewModels
 {
     public class TaskViewModel
     {
-        public IEnumerable<Task> Tasks { get; set; }
+
+        public string Heading { get; set; }
+
+        public Task Task { get; set; }
 
         public IEnumerable<Category> Categories { get; set; }
-
-        public FilterTask FilterTasks { get; set; }
-
     }
 }
